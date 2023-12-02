@@ -39,13 +39,13 @@ function generateRandomCard() {
 
     // Inserir espaço vazio no meio da coluna N
     const middleIndex = Math.floor(card['N'].length / 2);
-    card['N'].splice(middleIndex, 0, 'FREE');
+    card['N'].splice(middleIndex, 0, 'X');
 
     return card;
 }
 
 
-// Função para gerar números para uma coluna específica
+
 // Função para gerar números para uma coluna específica
 function generateColumnNumbers(columnIndex) {
     const columnStart = columnIndex * 15 + 1;
@@ -142,7 +142,7 @@ function startGame() {
         }
 
         if (drawnNumbers.size < maxDraws) {
-            setTimeout(drawNextNumber, 10); // Sorteia o próximo número a cada segundo
+            setTimeout(drawNextNumber, 500); // Sorteia o próximo número a cada segundo
         } else {
             gameInProgress = false;
         }
@@ -175,7 +175,7 @@ function checkWinner() {
         if (playerNameElement) {
             const playerName = playerNameElement.textContent;
             const markedCells = card.querySelectorAll('.marked').length;
-            if (markedCells === 24) { // Todas as células exceto a célula 'FREE'
+            if (markedCells === 24) { // Todas as células exceto a célula 'X'
                 displayWinner(playerName);
                 gameInProgress = false;
                 break;
@@ -190,6 +190,7 @@ function displayWinner(playerName) {
     restartButton.style.display = 'inline-block';
 
     const winnerDisplay = document.createElement('h2');
+    winnerDisplay.id = 'winner-display'
     winnerDisplay.textContent = `O jogador ${playerName} venceu!`;
     document.body.appendChild(winnerDisplay);
 }
