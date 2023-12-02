@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #player-info {
+    margin-bottom: 20px;
+  }
+  
+  #bingo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .bingo-card {
+    border: 1px solid #000;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #draw-number {
+    margin-top: 20px;
+  }
+  
+  .marked {
+    background-color: red;
+  }

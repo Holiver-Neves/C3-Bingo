@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h1>Bingo Game</h1>
+    <div id="player-info">
+        <label for="player-name">Seu Nome:</label>
+        <input type="text" id="player-name">
+        <button id="gerar-cartela" onclick="generateCard()">Gerar Cartela</button>
+    </div>
+    <div id="bingo-cards"></div>
+    <button id="start-button" onclick="startGame()">Iniciar Jogo</button>
+    <button id="restart-button" onclick="restartGame()" style="display: none;">Reiniciar</button>
+
+    <div id="drawn-numbers-container">
+        <table id="drawn-numbers"></table>
+    </div>
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>
