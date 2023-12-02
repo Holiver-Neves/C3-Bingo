@@ -8,12 +8,14 @@
 </head>
 
 <body>
-    <h1>Bingo Game</h1>
+    <h1>Jogo do Bingo</h1>
     <div id="player-info">
-        <label for="player-name">Seu Nome:</label>
+        <label for="player-name">Jogador:</label>
         <input type="text" id="player-name">
         <button id="gerar-cartela" onclick="generateCard()">Gerar Cartela</button>
     </div>
+    <button id="start-button" onclick="startGame()">Iniciar Jogo</button>
+    <button id="restart-button" onclick="restartGame()" style="display: none;">Reiniciar</button>
     <div class="game-container">
         <div id="bingo-cards"></div>
         <div id="drawn-numbers-container">
@@ -24,8 +26,7 @@
     </div>
 
 
-    <button id="start-button" onclick="startGame()">Iniciar Jogo</button>
-    <button id="restart-button" onclick="restartGame()" style="display: none;">Reiniciar</button>
+    
 
     <script src="main.js"></script>
 </body>

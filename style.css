@@ -1,171 +1,190 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  #player-info {
-    margin-bottom: 20px;
-  }
-  
-  #bingo-cards {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .bingo-card {
-    border: 1px solid #000;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  #draw-number {
-    margin-top: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+}
+label {
+  font-size: 20px;
+}
+#player-info {
+  margin-bottom: 20px;
+}
 
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-  }
-  
-  #start-button {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  #restart-button {
-    background-color: #f44336;
-    color: white;
-  }
-  .bingo-card {
-    background-color: #e0e0e0; /* Fundo azul claro */
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    display: inline-block;
-  }
-  
-  .bingo-card table {
-    width: 250px; /* Largura das cartelas */
-    height: 250px; /* Altura das cartelas */
-    border-collapse: collapse;
-    table-layout: fixed;
-  }
-  
-  .bingo-card td {
-    text-align: center;
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #ccc;
-    position: relative;
-  }
-  
-  .bingo-card td.marked::after {
-    content: "X";
-    color: red;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+#bingo-cards {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  #winner-display {
-    background-color: #4CAF50; /* Fundo verde */
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.bingo-card {
+  border: 1px solid #000;
+  padding: 10px;
+  width: 233px;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-  body {
-    background-color: #f2f2f2; /* Cor de fundo mais clara ou cinza claro */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  #gerar-cartela {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-    background-color: #2196F3;
-    color: white;
-  }
-  
-  input {
-    border-radius: 5px;
-    margin: 10px;
-     /* Largura do input */
-    height: 25px;
-    width: 280px;
-    font-size: 19px;
-    padding-left: 7px;
-  }
-  #drawn-numbers-container {
-    width: 20% !important;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    display: inline-block;
-    vertical-align: top;
-    text-align:-webkit-center;
-  }
-  #drawn-numbers-container h3{
-    margin-top: 0;
-  }
-  
-  #drawn-numbers {
-    width: 200px;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-  }
-  
-  #drawn-numbers th {
-    background-color: #b7f3f5;
-    color: white;
-    padding: 8px;
-  }
-  
-  #drawn-numbers td {
-    padding: 8px;
-    text-align: center;
-    border: solid 1px;
-    background-color: #b7f3f5;
-  }
-  
-  .game-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  #bingo-cards {
-    flex: 1;
-    margin-right: 20px; /* Espaço entre as cartelas e os números sorteados */
-  }
-  
-  #drawn-numbers-container {
-    flex: 1;
-    margin-left: 20px; /* Espaço entre as cartelas e os números sorteados */
-  }
-  
+#draw-number {
+  margin-top: 20px;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#start-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#restart-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.bingo-card {
+  background-color: #e0e0e0;
+  /* Fundo azul claro */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.bingo-card table {
+  width: 250px;
+  /* Largura das cartelas */
+  height: 250px;
+  /* Altura das cartelas */
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.bingo-card td {
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  position: relative;
+  font-size: 20px;
+}
+
+.bingo-card th {
+  font-size: 20px;
+}
+
+.bingo-card td.marked::after {
+  content: "X";
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#winner-display {
+  background-color: #4CAF50;
+  /* Fundo verde */
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: #e0dbca;
+  /* Cor de fundo mais clara ou cinza claro */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#gerar-cartela {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  background-color: #2196F3;
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+  margin: 10px;
+  /* Largura do input */
+  height: 25px;
+  width: 280px;
+  font-size: 19px;
+  padding-left: 7px;
+}
+
+#drawn-numbers-container {
+  max-width: 350px !important;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: -webkit-center;
+}
+
+#drawn-numbers-container h3 {
+  margin-top: 0;
+  max-width: 350px !important;
+}
+
+#drawn-numbers {
+  width: 200px;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+#drawn-numbers th {
+  background-color: #b7f3f5;
+  color: white;
+  padding: 8px;
+}
+
+#drawn-numbers td {
+  padding: 8px;
+  text-align: center;
+  border: solid 1px;
+  background-color: #b7f3f5;
+}
+
+.game-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#bingo-cards {
+  flex: 1;
+  margin-right: 20px;
+  /* Espaço entre as cartelas e os números sorteados */
+}
+
+#drawn-numbers-container {
+  background-color: #e0dbca;
+  flex: 1;
+  margin-left: 20px;
+  /* Espaço entre as cartelas e os números sorteados */
+}
